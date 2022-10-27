@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './component/Card';
 import Form from './component/Form';
+import './index.css';
 
 function App() {
-	const [praktikan, setPraktikan] = React.useState(null);
+	const [praktikan, setPraktikan] = useState(null);
 
 	const addPraktikanHandler = (data) => {
 		console.log(data);
@@ -15,11 +16,9 @@ function App() {
 	};
 
 	return (
-		<div className="App">
-			<h1>Kartu Praktikan</h1>
+		<div className="flex text-center justify-start items-center flex-col p-20 bg-slate-200 h-[100vh] w-full">
+			<h1 className="text-3xl font-bold">Kartu Praktikan</h1>
 			<Form onAddPraktikan={addPraktikanHandler} />
-			{/* Conditional rendering */}
-
 			{praktikan && (
 				<>
 					<button className="delete" onClick={removePraktikanHandler}>

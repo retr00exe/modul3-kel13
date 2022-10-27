@@ -1,17 +1,9 @@
-import React, { useEffect } from 'react';
-import './Card.css';
+import React from 'react';
 
 function Card(props) {
-	useEffect(() => {
-		alert('Kartu Nama Ditampilkan');
-		return () => {
-			alert('Kartu Nama akan dihapus');
-		};
-	}, []);
-
 	return (
-		<div className="card">
-			<img src="avatar.png" alt="Avatar" />
+		<div className="mt-20">
+			<img src="avatar.png" alt="Avatar" className="rounded-md" />
 			<div className="container">
 				<h4>{props.nama}</h4>
 				<p>Kelompok {props.kelompok}</p>
