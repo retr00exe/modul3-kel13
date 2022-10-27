@@ -16,7 +16,7 @@ function App() {
 	};
 
 	return (
-		<div className="flex text-center justify-start items-center flex-col p-20 bg-slate-200 h-[100vh] w-full">
+		<div className="flex text-center justify-start items-center flex-col p-20 bg-slate-200 w-full">
 			<h1 className="text-3xl font-bold">Kartu Praktikan</h1>
 			<Form onAddPraktikan={addPraktikanHandler} />
 			{praktikan && (
