@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Card from './component/Card';
 import Form from './component/Form';
+import Quote from './component/Quote';
 import './index.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
 					<Card nama={praktikan.nama} kelompok={praktikan.kelompok} />
 				</>
 			)}
+			<Quote />
 		</div>
 	);
 }
